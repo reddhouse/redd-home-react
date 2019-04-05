@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "redd-home-react",
+  "builds": [
+    {"src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" }}
+  ],
+  "routes": [
+    {"src": "^/initiatives/(.*)", "dest": "/"}
+  ],
+  "alias": "redd.house"
+}
