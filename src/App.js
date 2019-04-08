@@ -41,7 +41,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 const reddTheme = {
   media: media,
 
-  color1: "#29648a",
+  color1: "#3B8070",
   color2: "#478547",
   color3: "#bd5757"
 }
