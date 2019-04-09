@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const ReddContext = React.createContext()
 
 function Store(props) {
-  const [nav, setNav] = useState("HOME")
+  const [nav, setNav] = useState("PORTFOLIO")
 
   return (
     <ReddContext.Provider

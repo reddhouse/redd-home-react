@@ -20,7 +20,8 @@ export default App
 const sizes = {
   desktop: 992,
   tablet: 768,
-  phone: 576
+  phone: 576,
+  mini: 320
 }
 
 // Iterate through the sizes and create a media template.
@@ -43,6 +44,7 @@ const reddTheme = {
 
   color1: "#3B8070",
   color2: "#41B883",
-  color3: "#478547",
-  color4: "#bd5757"
+  color3: "#262626",
+  color4: "#478547",
+  color5: "#bd5757"
 }

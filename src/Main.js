@@ -1,7 +1,10 @@
 import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
-import Home from './components/Home'
 import { ReddContext } from './Store'
+import Home from './components/Home'
+import Portfolio from './components/Portfolio'
+import Sandbox from './components/Sandbox'
+
 
 export default () => {
   const { nav, setNav } = useContext(ReddContext)
@@ -11,9 +14,9 @@ export default () => {
       case "HOME":
         return <Home />
       case "PORTFOLIO":
-        return <div>Portfolio Stub</div>
+        return <Portfolio />
       case "SANDBOX":
-        return <div>Sandbox Stub</div>
+        return <Sandbox />
       default:
         return
     }
@@ -39,9 +42,9 @@ const Container = styled.div`
 
 const Gutter = styled.div`
   flex: 1 1 auto;
-  min-width: 10px;
+  min-width: 20px;
 `
 
 const Center = styled.div`
-  flex: 0 1 1040px;
+  flex: 0 1 700px;
 `

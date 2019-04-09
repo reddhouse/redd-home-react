@@ -16,8 +16,9 @@ export default () => {
 const Container = styled.div`
   margin: 20px;
 
-  ${props => props.theme.media.tablet`margin: 10px;`}
+  ${props => props.theme.media.tablet`margin: 15px;`}
   ${props => props.theme.media.phone`margin: 10px;`}
+  ${props => props.theme.media.mini`margin: 5px;`}
 
   color: ${props => props.theme.color1};
 
