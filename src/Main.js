@@ -1,15 +1,29 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
 import Home from './components/Home'
+import { ReddContext } from './Store'
 
 export default () => {
-  const [value, setValue] = useState("")
+  const { nav, setNav } = useContext(ReddContext)
+
+  function renderNavigated() {
+    switch (nav) {
+      case "HOME":
+        return <Home />
+      case "PORTFOLIO":
+        return <div>Portfolio Stub</div>
+      case "SANDBOX":
+        return <div>Sandbox Stub</div>
+      default:
+        return
+    }
+  }
 
   return (
     <Container>
       <Gutter />
         <Center>
-            <Home />
+          { renderNavigated() }
         </Center>
       <Gutter />
     </Container>

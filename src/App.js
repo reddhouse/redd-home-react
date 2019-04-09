@@ -42,6 +42,7 @@ const reddTheme = {
   media: media,
 
   color1: "#3B8070",
-  color2: "#478547",
-  color3: "#bd5757"
+  color2: "#41B883",
+  color3: "#478547",
+  color4: "#bd5757"
 }

@@ -3,17 +3,13 @@ import React, { useState } from 'react'
 export const ReddContext = React.createContext()
 
 function Store(props) {
-  const [light, setLight] = useState(true)
-
-  function toggleLight() {
-    setLight(light => !light)
-  }
+  const [nav, setNav] = useState("HOME")
 
   return (
     <ReddContext.Provider
       value={{
-        light,
-        toggleLight
+        nav,
+        setNav
       }}
     >
       {props.children}
