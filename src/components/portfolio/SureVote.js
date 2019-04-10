@@ -41,7 +41,9 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. Something</div>
+          <div>1. Good design is very hard, and time consuming relative to the javascript work required.</div>
+          <div>2. I probably should have practiced using a CSS framework rather than build a custom template.</div>
+          <div>3. Firebase has plenty of critics, but it worked well for this simple project.</div>
         </LessonsContainer>
         : <div></div>
       }

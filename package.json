@@ -39,13 +39,13 @@
     "webpack-dev-server": "latest"
   },
   "dependencies": {
+    "@firebase/app": "latest",
+    "@firebase/firestore": "latest",
     "babel-polyfill": "latest",
+    "firebase": "latest",
     "react": "latest",
     "react-dom": "latest",
     "styled-components": "latest",
-    "styled-icons": "latest",
-    "@firebase/app": "latest",
-    "@firebase/firestore": "latest",
-    "firebase": "latest"
+    "styled-icons": "latest"
   }
 }
