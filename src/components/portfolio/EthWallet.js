@@ -8,7 +8,7 @@ export default () => {
   return (
     <Container>
       <LogoRow>
-        <LogoContainer>ERC20<StyledEthLogo size="30" />Mobile Wallet</LogoContainer>
+        <LogoContainer>ERC20<StyledEthLogo size="36" />Mobile Wallet</LogoContainer>
         <div>2017-2018</div>
       </LogoRow>
 
@@ -60,12 +60,17 @@ const Container = styled.div`
 const LogoRow = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin: 20px 0px;
 `
 
 const LogoContainer = styled.div`
-  font-size: 1.5em;
+  margin-left: -4px;
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+  font-size: 2em;
+  ${props => props.theme.media.phone`font-size: 2em;`}
+  ${props => props.theme.media.mini`font-size: 1.5em;`}
   font-weight: 500;
 `
 

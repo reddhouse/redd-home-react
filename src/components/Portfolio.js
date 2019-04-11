@@ -4,12 +4,22 @@ import { ReddContext } from '../Store'
 import SureVote from './portfolio/SureVote'
 import StreborSpades from './portfolio/StreborSpades'
 import EthWallet from './portfolio/EthWallet'
+import LiquidCenter from './portfolio/LiquidCenter'
+import Liquify from './portfolio/Liquify'
 
 export default () => {
   const { setNav } = useContext(ReddContext)
 
   return (
     <Container>
+      <br />
+      
+      <Liquify />
+      <DividerRow><Divider /></DividerRow>
+
+      <LiquidCenter />
+      <DividerRow><Divider /></DividerRow>
+
       <EthWallet />
       <DividerRow><Divider /></DividerRow>
 

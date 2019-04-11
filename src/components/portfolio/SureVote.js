@@ -61,14 +61,16 @@ const Container = styled.div`
 const LogoRow = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin: 20px 0px;
 `
 
 const LogoContainer = styled.div`
+  margin-left: -4px;
   @import url('https://fonts.googleapis.com/css?family=Arimo');
   font-family: 'Arimo', Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  ${props => props.theme.media.phone`font-size: 2em;`}
   font-weight: 500;
 `
 
