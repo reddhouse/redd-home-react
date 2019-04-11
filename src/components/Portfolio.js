@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
 import { ReddContext } from '../Store'
+import Header from './Header'
+import Footer from './Footer'
 import SureVote from './portfolio/SureVote'
 import StreborSpades from './portfolio/StreborSpades'
 import EthWallet from './portfolio/EthWallet'
@@ -12,8 +14,8 @@ export default () => {
 
   return (
     <Container>
-      <br />
-      
+      <Header location="PORTFOLIO" />
+
       <Liquify />
       <DividerRow><Divider /></DividerRow>
 
@@ -27,8 +29,8 @@ export default () => {
       <DividerRow><Divider /></DividerRow>
 
       <StreborSpades />
-      <br />
-      <div onClick={() => setNav("HOME")}>{"<< "}Go Back</div>
+
+      <Footer location="PORTFOLIO" />
     </Container>
   )
 }

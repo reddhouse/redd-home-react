@@ -23,14 +23,13 @@ export default () => {
         <StyledAnchor href="https://github.com/reddhouse/liquify-web" target="_blank" rel="noopener noreferrer">https://github.com/reddhouse/liquify-web</StyledAnchor>
       </LinksRow>
 
-      <Blurb>Liquify is a political-tech proof of concept that demonstrates how voters and their represenatives might utilize liquid democracy in the legislative process.</Blurb>
-      <Blurb2>The website mimics a chat app, which I assumed was the most recognizable interface across the demographic range of intended users/voters.</Blurb2>
+      <Blurb>Liquify is a political-tech proof of concept that demonstrates how voters and their represenatives might utilize liquid democracy in the legislative process. The website mimics a chat app, which I assumed is the most recognizable interface across the demographic range of intended users/voters.</Blurb>
 
       <Title>Technology:</Title>
       <div>- Clean, stateful React function components with React Hooks.</div>
       <div>- All lifecycle methods handled by useEffect.</div>
       <div>- Global state managed with the React Context API.</div>
-      <div>- Deployed with Zeit Now's @now/static-build.</div>
+      <div>- Custom router (React-Router would have been overkill).</div>
 
       <Title>Lessons Learned:</Title>
       <div onClick={() => setLessons(lessons => !lessons)}>
@@ -42,8 +41,8 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. React Hooks reduce "wrapper hell" and eliminate overuse of HOCs, render props, and other abstractions. I think Hooks are a monumental upgrade (not just a new, shiny), and I look forward to amassing a library of reusable components that do stateful things the Hooks way.</div>
-          <div>2. In previous apps I spent a lot of time configuring Redux actions, reducers, and sagas. React's Context API is way easier to implement, and if things ever started to get squirrelly, I'd reach for the useReducer hook first, before Redux.</div>
+          <div>1. React Hooks reduce "wrapper hell" and eliminate overuse of HOCs, render props, and other abstractions. I think Hooks are a monumental upgrade (not just a new, shiny), and I look forward to building a library of reusable components that do stateful things the Hooks way.</div>
+          <div>2. In previous apps I spent a lot of time configuring Redux actions, reducers, and sagas. React's Context API is way easier to implement, and if things ever started to get squirrelly, I'd reach for the useReducer Hook first, before Redux.</div>
           <div>3. I started out experimenting with CSS Grid instead of Flexbox, but after playing around a bit, it appeared that Flexbox can handle (almost) everything I need layout-wise. Column-gap for Flex layouts would seal the deal, but it might be a while yet (google W3 org's CSS Box Alignment Module Level 3).</div>
         </LessonsContainer>
         : <div></div>
@@ -71,7 +70,7 @@ const LogoContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Righteous');
   font-family: 'Righteous', 'Verdana', cursive;
   font-size: 2.5em;
-  ${props => props.theme.media.phone`font-size: 2em;`}
+  ${props => props.theme.media.phone`font-size: 2.25em;`}
   font-weight: 500;
 `
 
@@ -103,12 +102,6 @@ const StyledAnchor = styled.a`
 
 const Blurb = styled.div`
   margin-top: 20px;
-  font-size: .9em;
-  font-style: italic;
-`
-
-const Blurb2 = styled.div`
-  margin-top: 6px;
   font-size: .9em;
   font-style: italic;
 `

@@ -54,7 +54,10 @@ const SubTag = styled.div`
   margin: 20px 10px;
   font-size: 1.25em;
   ${props => props.theme.media.tablet`font-size: 1em;`}
-  ${props => props.theme.media.phone`font-size: 1em;`}
+  ${props => props.theme.media.phone`
+    font-size: 1em;
+    margin-bottom: 0px;
+  `}
   ${props => props.theme.media.mini`
     font-size: 1em;
     margin-bottom: 0px;

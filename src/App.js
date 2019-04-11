@@ -44,7 +44,8 @@ const reddTheme = {
 
   color1: "#3B8070",
   color2: "#41B883",
-  color3: "#262626",
-  color4: "#478547",
-  color5: "#bd5757"
+  color3: "#262626", // SureVote dark grey
+  color4: "#2e2f30", // Default dark grey (see index.html)
+  color5: "#478547",
+  color6: "#bd5757"
 }

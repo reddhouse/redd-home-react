@@ -69,15 +69,15 @@ const LogoContainer = styled.div`
   margin-left: -4px;
   @import url('https://fonts.googleapis.com/css?family=Arimo');
   font-family: 'Arimo', Arial, sans-serif;
-  font-size: 2.5em;
-  ${props => props.theme.media.phone`font-size: 2em;`}
-  ${props => props.theme.media.mini`font-size: 1.75em;`}
+  font-size: 2.25em;
+  ${props => props.theme.media.phone`font-size: 1.75em;`}
 `
 
 const StyledSuitcase = styled(Suitcase)`
   vertical-align: text-bottom;
   display:inline;
   margin: 0px 5px 5px 5px;
+  ${props => props.theme.media.phone`margin-bottom: 0px;`}
 `
 
 const LinksRow = styled.div`

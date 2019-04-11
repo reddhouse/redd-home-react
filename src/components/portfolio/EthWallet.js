@@ -69,7 +69,7 @@ const LogoContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
   font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
   font-size: 2em;
-  ${props => props.theme.media.phone`font-size: 2em;`}
+  ${props => props.theme.media.phone`font-size: 1.5em;`}
   ${props => props.theme.media.mini`font-size: 1.5em;`}
   font-weight: 500;
 `

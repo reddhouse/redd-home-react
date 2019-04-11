@@ -8,29 +8,30 @@ export default ({ location }) => {
   return (
     <Container>
       <NavRow>
-        <StyledImage src={"tiny-red-house.png"} onClick={() => setNav("HOME")}/>
-        <NavItem
-          itemID="HOME"
-          location={null}
-          onClick={() => setNav("HOME")}>
-          Home
-        </NavItem>
-
-        <Pipe>&nbsp;</Pipe>
 
         <NavItem
           itemID="PORTFOLIO"
           location={location}
           onClick={() => setNav("PORTFOLIO")}>
-          &nbsp;Portfolio
+          Portfolio&nbsp;
         </NavItem>
 
         <NavItem
           itemID="SANDBOX"
           location={location}
           onClick={() => setNav("SANDBOX")}>
-          &nbsp;Sandbox
+          Sandbox&nbsp;
         </NavItem>
+
+        <Pipe>&nbsp;</Pipe>
+
+        <NavItem
+          itemID="HOME"
+          location={null}
+          onClick={() => setNav("HOME")}>
+          Home&nbsp;
+        </NavItem>
+        <StyledImage src={"tiny-red-house.png"} onClick={() => setNav("HOME")}/>
 
       </NavRow>
     </Container>
@@ -45,16 +46,15 @@ const Container = styled.div`
 
 const NavRow = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  padding-top: 14px;
+  margin-top: 20px;
+  padding-bottom: 14px;
   ${props => props.theme.media.phone`
-    margin-bottom: 32px;
-    padding-top: 6px;
+    margin-top: 12px;
+    padding-bottom: 6px;
   `}
-  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   color: red;
 `
 
@@ -68,10 +68,9 @@ const NavItem = styled.div`
 const StyledImage = styled.img`
   width: 16px;
   margin-bottom: 4px;
-  margin-right: 4px;
   cursor: pointer;
 `
 
 const Pipe = styled.div`
-  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
 `
