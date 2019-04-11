@@ -41,9 +41,9 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. This app continually polls the server for changes to the hands and table. WebSockets would have saved a lot of network traffic.</div>
-          <div>2. I created more complexity than was probably necessary by using Vuex. A real-time database like Firebase would have been much faster.</div>
-          <div>3. Javascript is not as pretty as Elixir or Python, but ES6 improvements are making things much more enjoyable for today's web devs.</div>
+          <div><b>1.</b> This app continually polls the server for changes to the hands and table. WebSockets would have saved a lot of network traffic.</div>
+          <div><b>2.</b> I created more complexity than was probably necessary by using Vuex. A real-time database like Firebase would have been much faster.</div>
+          <div><b>3.</b> Javascript is not as pretty as Elixir or Python, but ES6 improvements are making things much more enjoyable for today's web devs.</div>
         </LessonsContainer>
         : <div></div>
       }
@@ -85,7 +85,7 @@ const LinksRow = styled.div`
 `
 
 const FixedTitle = styled.div`
-  flex: 0 0 100px;
+  flex: 0 0 70px;
   font-weight: bold;
 `
 
@@ -106,8 +106,9 @@ const Blurb = styled.div`
 
 const Toggle = styled.div`
   color: ${props => props.theme.color2};
+  cursor: pointer;
 `
 
 const LessonsContainer = styled.div`
-
+  margin-top: 6px;
 `

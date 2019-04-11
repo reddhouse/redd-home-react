@@ -21,7 +21,7 @@ export default () => {
         <StyledAnchor href="https://github.com/reddhouse/liquid-center" target="_blank" rel="noopener noreferrer">https://github.com/reddhouse/liquid-center</StyledAnchor>
       </LinksRow>
 
-      <Blurb>In order to spread the word about liquid democracy, I needed an easy way to share specific articles with various audiences. It was important that readers gain an understanding of the broader aims of the organization by easily jumping "out" of an endpoint, and "in" to a carefully arranged set of featured posts on the homepage.</Blurb>
+      <Blurb>In order to spread the word about liquid democracy, I needed an easy way to share specific articles written for various audiences. It was important that readers gain an understanding of the broader aims of the organization by easily jumping "out" of an endpoint, and "in" to a carefully arranged set of featured posts on the homepage.</Blurb>
       <Blurb2>It was also important that I maintained full creative control over my content, using technologies I prefer. Hence, blog services like Medium and Ghost were out of the question. The entire site is written from scratch using Ghost's Casper theme as inspiration.</Blurb2>
 
       <Title>Technology:</Title>
@@ -41,9 +41,9 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. Next.js was a perfect solution for this site given the ease of establishing stand-alone static websites at each Next "Page" (beneficial for SEO, among other reasons).</div>
-          <div>2. Zeit's Now service blows my mind. It's crazy what they are giving away in their free tier, and they never seem to stop shipping new updates.</div>
-          <div>3. It was gratifying to see Dan Abramov come to <StyledAnchor href="https://medium.com/@dan_abramov/why-my-new-blog-isnt-on-medium-3b280282fbae" target="_blank" rel="noopener noreferrer">the same conclusion </StyledAnchor>I did regarding building his own blog site.</div>
+          <div><b>1.</b> Next.js was a perfect solution for this site given the ease of establishing stand-alone static websites at each Next "Page" (beneficial for SEO, among other reasons).</div>
+          <div><b>2.</b> Zeit's Now service blows my mind. It's crazy what they are giving away in their free tier, and they never seem to stop shipping new updates.</div>
+          <div><b>3.</b> It was gratifying to see Dan Abramov come to <StyledAnchor href="https://medium.com/@dan_abramov/why-my-new-blog-isnt-on-medium-3b280282fbae" target="_blank" rel="noopener noreferrer">the same conclusion</StyledAnchor> I did regarding building his own blog site.</div>
         </LessonsContainer>
         : <div></div>
       }
@@ -80,7 +80,7 @@ const LinksRow = styled.div`
 `
 
 const FixedTitle = styled.div`
-  flex: 0 0 100px;
+  flex: 0 0 70px;
   font-weight: bold;
 `
 
@@ -107,8 +107,9 @@ const Blurb2 = styled.div`
 
 const Toggle = styled.div`
   color: ${props => props.theme.color2};
+  cursor: pointer;
 `
 
 const LessonsContainer = styled.div`
-
+  margin-top: 6px;
 `

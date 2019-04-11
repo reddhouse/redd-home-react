@@ -41,9 +41,9 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. React Hooks reduce "wrapper hell" and eliminate overuse of HOCs, render props, and other abstractions. I think Hooks are a monumental upgrade (not just a new, shiny), and I look forward to building a library of reusable components that do stateful things the Hooks way.</div>
-          <div>2. In previous apps I spent a lot of time configuring Redux actions, reducers, and sagas. React's Context API is way easier to implement, and if things ever started to get squirrelly, I'd reach for the useReducer Hook first, before Redux.</div>
-          <div>3. I started out experimenting with CSS Grid instead of Flexbox, but after playing around a bit, it appeared that Flexbox can handle (almost) everything I need layout-wise. Column-gap for Flex layouts would seal the deal, but it might be a while yet (google W3 org's CSS Box Alignment Module Level 3).</div>
+          <div><b>1.</b> As promised, React Hooks do indeed reduce "wrapper hell" and eliminate overuse of HOCs, render props, and other abstractions. I think Hooks are a monumental upgrade (not just a new, shiny), and I look forward to building a library of reusable components that do stateful things the Hooks way.</div>
+          <div><b>2.</b> In previous apps I spent a lot of time configuring Redux actions, reducers, and sagas. React's Context API is way easier to implement, and if things ever started to get squirrelly, I'd reach for the useReducer Hook first, before Redux.</div>
+          <div><b>3.</b> I started out experimenting with CSS Grid instead of Flexbox, but after playing around a bit, it appeared that Flexbox can handle (almost) everything I need layout-wise. Column-gap for Flex layouts would be a nice bonus, but it might be a while yet (see progress on W3 org's CSS Box Alignment Module Level 3).</div>
         </LessonsContainer>
         : <div></div>
       }
@@ -87,7 +87,7 @@ const LinksRow = styled.div`
 `
 
 const FixedTitle = styled.div`
-  flex: 0 0 100px;
+  flex: 0 0 70px;
   font-weight: bold;
 `
 
@@ -108,8 +108,9 @@ const Blurb = styled.div`
 
 const Toggle = styled.div`
   color: ${props => props.theme.color2};
+  cursor: pointer;
 `
 
 const LessonsContainer = styled.div`
-
+  margin-top: 6px;
 `

@@ -41,9 +41,9 @@ export default () => {
 
       { lessons
         ? <LessonsContainer>
-          <div>1. Good design is very hard, and time consuming relative to the javascript work required.</div>
-          <div>2. I probably should have practiced using a CSS framework rather than build a custom template.</div>
-          <div>3. Firebase has plenty of critics, but it worked well for this simple project.</div>
+          <div><b>1.</b> Good design is very hard, and time consuming relative to the javascript work required.</div>
+          <div><b>2.</b> I probably should have practiced using a CSS framework rather than build a custom template.</div>
+          <div><b>3.</b> Firebase has plenty of critics, but it worked well for this simple project.</div>
         </LessonsContainer>
         : <div></div>
       }
@@ -87,7 +87,7 @@ const LinksRow = styled.div`
 `
 
 const FixedTitle = styled.div`
-  flex: 0 0 100px;
+  flex: 0 0 70px;
   font-weight: bold;
 `
 
@@ -108,8 +108,9 @@ const Blurb = styled.div`
 
 const Toggle = styled.div`
   color: ${props => props.theme.color2};
+  cursor: pointer;
 `
 
 const LessonsContainer = styled.div`
-
+  margin-top: 6px;
 `
