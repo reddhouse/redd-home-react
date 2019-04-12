@@ -44,6 +44,7 @@
     "babel-polyfill": "latest",
     "firebase": "latest",
     "react": "latest",
+    "react-cache": "^2.0.0-alpha.1",
     "react-dom": "latest",
     "styled-components": "latest",
     "styled-icons": "latest"

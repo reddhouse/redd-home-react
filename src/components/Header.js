@@ -31,7 +31,7 @@ export default ({ location }) => {
           onClick={() => setNav("HOME")}>
           Home&nbsp;
         </NavItem>
-        <StyledImage src={"tiny-red-house.png"} onClick={() => setNav("HOME")}/>
+        <StyledImage src={"red-house-tiny-square.png"} onClick={() => setNav("HOME")}/>
 
       </NavRow>
     </Container>
@@ -66,7 +66,7 @@ const NavItem = styled.div`
 `
 
 const StyledImage = styled.img`
-  width: 16px;
+  width: 18px;
   margin-bottom: 4px;
   cursor: pointer;
 `
