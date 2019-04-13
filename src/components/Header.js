@@ -51,8 +51,8 @@ const NavRow = styled.div`
   margin-top: 20px;
   padding-bottom: 14px;
   ${props => props.theme.media.phone`
-    margin-top: 12px;
-    padding-bottom: 6px;
+    margin-top: 14px;
+    padding-bottom: 8px;
   `}
   border-bottom: 1px solid lightgrey;
   color: red;

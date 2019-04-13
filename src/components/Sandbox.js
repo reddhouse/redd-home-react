@@ -26,6 +26,14 @@ export default () => {
       <Header location="SANDBOX" />
       <br />
 
+      <div>View the code for each component in <StyledAnchor href="https://github.com/reddhouse/redd-home-react/tree/master/src/components/sandbox" target="_blank" rel="noopener noreferrer">this&nbsp;directory</StyledAnchor>.</div>
+      <br />
+      <br />
+
+      <b>MountOnlyEffect (useRef w/new form of componentDidMount)</b>
+      <MountOnlyEffect />
+      <DividerRow><Divider /></DividerRow>
+
       <b>Counter (useState)</b>
       <Counter />
       <DividerRow><Divider /></DividerRow>
@@ -51,10 +59,6 @@ export default () => {
 
       <b>DebounceDemo (useEffect & custom hook)</b>
       <DebounceDemo />
-      <DividerRow><Divider /></DividerRow>
-
-      <b>MountOnlyEffect (useRef w/new form of componentDidMount)</b>
-      <MountOnlyEffect />
       <DividerRow><Divider /></DividerRow>
 
       <b>LightSwitch (useContext & global store)</b>
@@ -105,4 +109,8 @@ const Divider = styled.div`
   flex: 0 1 75%;
   margin: 40px 0px 10px 0px;
   border-top: 1px solid lightgrey;
+`
+
+const StyledAnchor = styled.a`
+  color: ${props => props.theme.color2};
 `

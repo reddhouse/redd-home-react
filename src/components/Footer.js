@@ -16,7 +16,7 @@ export default ({ location }) => {
           Home
         </NavItem>
 
-        <Pipe>&nbsp;</Pipe>
+        <VerticalBar>&nbsp;</VerticalBar>
 
         <NavItem
           itemID="PORTFOLIO"
@@ -33,6 +33,7 @@ export default ({ location }) => {
         </NavItem>
 
       </NavRow>
+    <Filler>&nbsp;</Filler>
     </Container>
   )
 }
@@ -48,11 +49,9 @@ const NavRow = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 60px;
   padding-top: 14px;
   ${props => props.theme.media.phone`
-    margin-bottom: 32px;
-    padding-top: 6px;
+    padding-top: 8px;
   `}
   border-top: 1px solid lightgrey;
   color: red;
@@ -72,6 +71,11 @@ const StyledImage = styled.img`
   cursor: pointer;
 `
 
-const Pipe = styled.div`
+const VerticalBar = styled.div`
   border-right: 1px solid lightgrey;
+`
+
+const Filler = styled.div`
+  width: 100%;
+  min-height: 112px;
 `
