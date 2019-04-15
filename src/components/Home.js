@@ -11,7 +11,9 @@ export default () => {
 
   return (
     <Container>
-      <StyledImage src={"red-house.png"} />
+      <ImageWrapper>
+        <StyledImage src={"red-house.png"} />
+      </ImageWrapper>
       <Tagline>justin builds stuff with&nbsp;javascript</Tagline>
       <SubTag>React, React Native, and Web3 Developer</SubTag>
       <Button onClick={() => setNav("PORTFOLIO")}>portfolio</Button>
@@ -30,17 +32,23 @@ const Container = styled.div`
   text-align: center;
 `
 
-const StyledImage = styled.img`
-  width: 300px;
+const ImageWrapper = styled.div`
+  min-height: 300px;
   margin-top: 40px;
   ${props => props.theme.media.phone`
-    width: 175px;
+    min-height: 175px;
     margin-top: 10px;
   `}
   ${props => props.theme.media.mini`
-    width: 150px;
+    min-height: 150px;
     margin-top: 0px;
   `}
+`
+
+const StyledImage = styled.img`
+  width: 300px;
+  ${props => props.theme.media.phone`width: 175px;`}
+  ${props => props.theme.media.mini`width: 150px;`}
 `
 
 const Tagline = styled.div`
