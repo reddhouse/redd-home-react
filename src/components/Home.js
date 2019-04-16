@@ -33,14 +33,14 @@ const Container = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  min-height: 300px;
+  min-height: 310px;
   margin-top: 40px;
   ${props => props.theme.media.phone`
-    min-height: 175px;
+    min-height: 185px;
     margin-top: 10px;
   `}
   ${props => props.theme.media.mini`
-    min-height: 150px;
+    min-height: 160px;
     margin-top: 0px;
   `}
 `
