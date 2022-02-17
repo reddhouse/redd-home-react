@@ -21,7 +21,7 @@ export default () => {
         <StyledAnchor href="https://github.com/reddhouse/democracy365" target="_blank" rel="noopener noreferrer">https://github.com/reddhouse/democracy365</StyledAnchor>
       </LinksRow>
 
-      <Blurb>The democracy365 web app is the culmination of all my previous liquid democracy experiments, but my first to be powered by a fully functional, custom built back-end.</Blurb>
+      <Blurb>The democracy365 web app is the culmination of all my previous liquid democracy experiments, but the first to be powered by a fully functional, custom built back-end.</Blurb>
 
       <Title>Technology:</Title>
       <div>- AWS CloudFormation-instantiated resources, including VPC, RDS, Lambda, API Gateway, and EventBridge services, configured from scratch without a back-end framework.</div>
@@ -60,14 +60,15 @@ const LogoRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 20px 0px;
+  margin: 45px 0px 25px 0px;
 `
 const LogoContainer = styled.div`
   margin-left: -4px;
   padding: 0px 5px;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 2em;
-  ${props => props.theme.media.phone`font-size: 2em;`}
+  ${props => props.theme.media.phone`font-size: 1.75em;`}
+  ${props => props.theme.media.mini`font-size: 1.5em;`}
   font-weight: 500;
   color: white;
   background-color: ${props => props.theme.color7};

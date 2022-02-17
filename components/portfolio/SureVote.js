@@ -61,13 +61,14 @@ const LogoRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 20px 0px;
+  margin: 25px 0px;
 `
 const LogoContainer = styled.div`
   margin-left: -4px;
   font-family: 'Arimo', Arial, sans-serif;
   font-size: 2.5em;
   ${props => props.theme.media.phone`font-size: 2em;`}
+  ${props => props.theme.media.mini`font-size: 1.75em;`}
   font-weight: 500;
 `
 const LogoRed = styled.span`

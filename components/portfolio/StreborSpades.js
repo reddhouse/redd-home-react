@@ -61,7 +61,7 @@ const LogoRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 20px 0px;
+  margin: 25px 0px;
 `
 const LogoContainer = styled.div`
   margin-left: -4px;
@@ -69,6 +69,7 @@ const LogoContainer = styled.div`
   font-family: 'Arimo', Arial, sans-serif;
   font-size: 2.25em;
   ${props => props.theme.media.phone`font-size: 1.75em;`}
+  ${props => props.theme.media.mini`font-size: 1.5em;`}
 `
 const StyledSuitcase = styled(Suitcase)`
   vertical-align: text-bottom;
