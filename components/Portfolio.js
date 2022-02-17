@@ -6,11 +6,15 @@ import StreborSpades from './portfolio/StreborSpades'
 import EthWallet from './portfolio/EthWallet'
 import LiquidCenter from './portfolio/LiquidCenter'
 import Liquify from './portfolio/Liquify'
+import Democracy365 from './portfolio/Democracy365'
 
 export default () => {
   return (
     <Container>
       <Header location="PORTFOLIO" />
+
+      <Democracy365 />
+      <DividerRow><Divider /></DividerRow>
 
       <Liquify />
       <DividerRow><Divider /></DividerRow>

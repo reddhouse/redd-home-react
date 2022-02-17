@@ -103,5 +103,7 @@ const reddTheme = {
   color3: "#262626", // SureVote dark grey
   color4: "#2e2f30", // Default dark grey (see index.html)
   color5: "#478547",
-  color6: "#bd5757"
+  color6: "#bd5757",
+  color7: "#404040", // democracy365 dark grey
+  color8: "#ffe033"  // democracy365 gold
 }
