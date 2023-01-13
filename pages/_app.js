@@ -21,6 +21,8 @@ export default function App({ Component, pageProps }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Arimo"
         />
+        <link rel="shortcut icon" href="/red-house-tiny-square.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/red-house-tiny-square.png"/>
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={reddTheme}>
