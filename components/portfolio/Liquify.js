@@ -15,7 +15,7 @@ export default () => {
 
       <LinksRow>
         <FixedTitle>Site:</FixedTitle>
-        <StyledAnchor href="https://liquify.us/" target="_blank" rel="noopener noreferrer">https://liquify.us/</StyledAnchor>
+        <div>Deprecated</div>
       </LinksRow>
 
       <LinksRow>

@@ -13,7 +13,7 @@ export default () => {
 
       <LinksRow>
         <FixedTitle>Site:</FixedTitle>
-        <StyledAnchor href="http://surevote.org" target="_blank" rel="noopener noreferrer">http://surevote.org</StyledAnchor>
+        <div>Deprecated</div>
       </LinksRow>
 
       <LinksRow>

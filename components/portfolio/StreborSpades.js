@@ -14,7 +14,7 @@ export default () => {
 
       <LinksRow>
         <FixedTitle>Site:</FixedTitle>
-        <StyledAnchor href="https://strebor-spades.herokuapp.com/#/" target="_blank" rel="noopener noreferrer">https://strebor-spades.herokuapp.com/#/</StyledAnchor>
+        <div>Deprecated</div>
       </LinksRow>
 
       <LinksRow>

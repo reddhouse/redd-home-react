@@ -7,11 +7,15 @@ import EthWallet from './portfolio/EthWallet'
 import LiquidCenter from './portfolio/LiquidCenter'
 import Liquify from './portfolio/Liquify'
 import Democracy365 from './portfolio/Democracy365'
+import Warehouse from './portfolio/Warehouse'
 
 export default () => {
   return (
     <Container>
       <Header location="PORTFOLIO" />
+
+      <Warehouse />
+      <DividerRow><Divider /></DividerRow>
 
       <Democracy365 />
       <DividerRow><Divider /></DividerRow>

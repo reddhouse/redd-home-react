@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { Ethereum } from '@styled-icons/fa-brands'
+import { BoxOpen } from '@styled-icons/fa-solid'
 
 export default () => {
   const [lessons, setLessons] = useState(false)
@@ -8,13 +8,13 @@ export default () => {
   return (
     <Container>
       <LogoRow>
-        <LogoContainer>ERC20<StyledEthLogo size="36" />Mobile Wallet</LogoContainer>
-        <div>2017-2018</div>
+        <LogoContainer>Warehouse Management System<StyledBox size="36" /></LogoContainer>
+        <div>2022-2023</div>
       </LogoRow>
 
       <LinksRow>
         <FixedTitle>Product:</FixedTitle>
-        <div>Proprietary iOS + Android Apps</div>
+        <div>Proprietary Node.js Applications</div>
       </LinksRow>
 
       <LinksRow>
@@ -22,13 +22,14 @@ export default () => {
         <div>Closed</div>
       </LinksRow>
 
-      <Blurb>The company I worked for in 2017 & 2018 landed a job with a client who required an Ethereum wallet, through which users could acquire and interact with a handful of ERC20 token contracts from their mobile devices. I built the front-end of the beta version of this app using React Native.</Blurb>
+      <Blurb>My work for this Toronto-based, 3rd-party Logistics company was my first foray into enterprise-scale (albeit startup-paced) software development. It was a huge eye-opener in terms of the differences between greenfield development and the special care a large production codebase requires in order to remain intelligible and performant.</Blurb>
 
       <Title>Technology:</Title>
-      <div>- React Native codebase compiled to separate iOS and Android builds.</div>
-      <div>- BIP39 nmemonic phrase as seed for HD32 wallet, with locally stored, encrypted private key.</div>
-      <div>- Web3js-enabled communication with an INFURA node.</div>
-      <div>- Deployed to test devices with Expo and Fabric (Fastlane).</div>
+      <div>- End to end Typescript (NestJS back-end + React SPA front-end).</div>
+      <div>- TypeORM abstraction over PostgreSQL.</div>
+      <div>- ReactQuery for data fetching and mutations.</div>
+      <div>- Recoil for global state management.</div>
+      <div>- Ant Design UI library.</div>
 
       <Title>Lessons Learned:</Title>
       <div onClick={() => setLessons(lessons => !lessons)}>
@@ -40,9 +41,9 @@ export default () => {
 
       {lessons
         ? <LessonsContainer>
-          <div><b>1.</b> This app solidified my appreciation for "functions over frameworks" as I transitioned (back) to React, having worked with Vue.js on a few preceding projects.</div>
-          <div><b>2.</b> Ethereum, as it was intended to be used by its decentralization-focused founders, asks a lot from users compared to the experience they are accustomed to in centralized services/apps.</div>
-          <div><b>3.</b> Just because everyone else is using ____, doesn't mean it's better or necessary. Javascript developers frequently reach for solutions to problems they haven't encountered yet.</div>
+          <div><b>1.</b> Life would be easier if more people <StyledAnchor href="https://grugbrain.dev/" target="_blank" rel="noopener noreferrer">feared the complexity demon</StyledAnchor>. I would be perfectly happy writing 10x the amount of code in order to avoid adding another dependency, or abstraction layer.</div>
+          <div><b>2.</b> Your ORM should be buried with your MVP; they allow fast iteration, but are not worth the costs in the long run.</div>
+          <div><b>3.</b> Your company is a corporation and owes you nothing (unless you're a shareholder), but if the bottom line means more than the actual humans that contribute to the company's success, what are we doing here?</div>
         </LessonsContainer>
         : <div></div>
       }
@@ -66,14 +67,15 @@ const LogoContainer = styled.div`
   margin-left: -4px;
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
   font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   ${props => props.theme.media.phone`font-size: 1.75em;`}
   ${props => props.theme.media.mini`font-size: 1.5em;`}
-  font-weight: 500;
 `
-const StyledEthLogo = styled(Ethereum)`
-  vertical-align: text-top;
+const StyledBox = styled(BoxOpen)`
+  vertical-align: text-bottom;
   display:inline;
+  margin-left: 6px;
+  ${props => props.theme.media.phone`margin-bottom: 0px;`}
 `
 const LinksRow = styled.div`
   display: flex;
