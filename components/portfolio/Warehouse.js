@@ -42,8 +42,8 @@ export default () => {
       {lessons
         ? <LessonsContainer>
           <div><b>1.</b> Life would be easier if more people <StyledAnchor href="https://grugbrain.dev/" target="_blank" rel="noopener noreferrer">feared the complexity demon</StyledAnchor>. I would be perfectly happy writing 10x the amount of code in order to avoid adding another dependency, or abstraction layer.</div>
-          <div><b>2.</b> Your ORM should be buried with your MVP; they allow fast iteration, but are not worth the costs in the long run.</div>
-          <div><b>3.</b> Your company is a corporation and owes you nothing (unless you're a shareholder), but if the bottom line means more than the actual humans that contribute to the company's success, what are we doing here?</div>
+          <div><b>2.</b> An ORM should probably be removed as you outgrow your MVP. At that point, you should have a better understanding of how to model your data, and you'll have one less black box to worry about.</div>
+          <div><b>3.</b> Moving fast and breaking things is a lie sold to founders by investors, and a cowardly way to run a company. A true leader knows the actual value of the thing they are adding to the world, and doesn't need to leave a wake of dead bodies in a rush to prove they are right.</div>
         </LessonsContainer>
         : <div></div>
       }
