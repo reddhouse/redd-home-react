@@ -14,7 +14,7 @@ export default () => {
 
       <LinksRow>
         <FixedTitle>Site:</FixedTitle>
-        <div>Deprecated</div>
+        <div>Retired</div>
       </LinksRow>
 
       <LinksRow>
